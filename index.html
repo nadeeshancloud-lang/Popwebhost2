@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishka Net | Master Hub</title>
+    <meta name="description" content="The official mobile-first Master Hub for Kanishka Net. Access videos, apps, and platforms.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader">
+        <h1 class="glitch-text" data-text="KANISHKA">KANISHKA</h1>
+        <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+
+    <canvas id="particles"></canvas>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">K_NET</div>
+        <ul class="nav-links">
+            <li><a href="#hub">Hub</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero reveal">
+        <h1 class="neon-title">Kanishka Net</h1>
+        <p class="subtitle">The Ultimate Creator Ecosystem</p>
+        <button class="btn-primary" onclick="scrollToHub()">
+            <i class="fa-solid fa-rocket"></i> Launch Hub
+        </button>
+    </header>
+
+    <section id="hub" class="container reveal">
+        <h2 class="section-title">Command Center</h2>
+        <div class="grid">
+            <a href="#" onclick="openDeepLink('vnd.youtube://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw', 'https://www.youtube.com/@PewDiePie')" class="glass-card link-card">
+                <i class="fa-brands fa-youtube" style="color: #FF0000;"></i>
+                <div class="card-info">
+                    <h3>YouTube Channel</h3>
+                    <p>Watch latest uploads</p>
+                </div>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </a>
+
+            <a href="#" onclick="openDeepLink('whatsapp://send?phone=94700000000', 'https://wa.me/94700000000')" class="glass-card link-card">
+                <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+                <div class="card-info">
+                    <h3>Community Chat</h3>
+                    <p>Join WhatsApp Group</p>
+                </div>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </a>
+
+            <a href="#" onclick="openDeepLink('tg://resolve?domain=telegram', 'https://t.me/telegram')" class="glass-card link-card">
+                <i class="fa-brands fa-telegram" style="color: #0088cc;"></i>
+                <div class="card-info">
+                    <h3>VIP Telegram</h3>
+                    <p>Exclusive updates</p>
+                </div>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </a>
+
+            <a href="https://github.com" target="_blank" class="glass-card link-card">
+                <i class="fa-solid fa-download" style="color: var(--accent);"></i>
+                <div class="card-info">
+                    <h3>Download K-App</h3>
+                    <p>Get the official APK</p>
+                </div>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="videos" class="container reveal">
+        <h2 class="section-title">Latest Transmission</h2>
+        <div class="glass-card video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw?autoplay=0&controls=1&showinfo=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="about" class="container reveal">
+        <div class="glass-card about-card">
+            <h2 class="section-title">System Info</h2>
+            <p>Welcome to Kanishka Net. This is a centralized nexus for all digital content, apps, and community interactions. Built for the future, designed for speed.</p>
+            <div class="social-row">
+                <button class="btn-icon" onclick="copyLink()"><i class="fa-solid fa-link"></i> Share Link</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="toast" class="toast">Link copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
